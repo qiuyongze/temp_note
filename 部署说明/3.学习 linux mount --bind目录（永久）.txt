@@ -1,0 +1,6 @@
+1.mount --bind /home/zyl_data /zyl_data
+把/home/zyl_data挂载到/zyl_data，如果/zyl_data目录有内容将被遮住（/zyl_data目录的内容一样存在。就好像窗帘把窗户遮住一样。窗户始终存在，只是被遮住而已，等umount了，原来/zyl_data目录的内容就显示出来了）
+要取消挂载使用umount即可
+
+2.如果在开机的时候自动挂载，可以在/etc/fstab里面增加以下内容
+/home/zyl_data /zyl_data none bind 0 0

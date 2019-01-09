@@ -1,0 +1,16 @@
+安装
+sudo apt-get update
+sudo apt-get install redis-server
+pip install redis
+
+允许所有机器访问
+vi /etc/redis/redis.conf
+把bind 127.0.0.1注释掉
+service redis-server restart
+
+使用心得：
+在redis-cli中输入
+config set stop-writes-on-bgsave-error no
+解决BUG：MISCONF Redis is configured to save RDB snapshots, but is currently not able to persist on disk. Commands that may modify the data set are disabled. Please check Redis logs for details about the error.
+
+一个程序中建立一个连接 以后一直用，不要操作一次就建一次连接 不稳定。

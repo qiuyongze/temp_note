@@ -1,0 +1,40 @@
+机器名称（如download_server）与架构.png里对应
+1.download_server 10.10.11.162
+1.1目录说明：
+/home/zyl/www                    网页所在位置
+/zyl_data/BGP                    下载文件所在位置
+/zyl_data/auto_download_bgp      下载脚本所在位置
+
+1.2运行了的程序：
+/zyl_data/auto_download_bgp/auto_download_bgp_ribs_v3.py #用于自动下载rib文件
+/zyl_data/auto_download_bgp/auto_download_bgp_updates_v2.py #用于自动下载update文件
+
+
+
+
+2.handle_server1 10.10.11.151
+2.1目录说明：
+/home/zyl/handle_v1   处理和入库的脚本位置
+/home/zyl/handle_v1_150  handle_server2的nfs 客户端
+/home/zyl/hjj_mysql   数据库定期运行脚本的位置
+/home/zyl/src         有些安装包的位置
+/home/zyl/socket      网页查询程序的位置
+
+2.2运行了的程序：
+/home/zyl/handle_v1/rib_start.py #处理handle_server1的rib文件
+/home/zyl/handle_v1/handle_bgp_updates_v6.py #处理handle_server1的upd文件
+/home/zyl/handle_v1/database_handle_rib.py #入库handle_server1处理的rib文件
+/home/zyl/handle_v1/database_handle_upd.py #入库handle_server1处理的rib文件
+/home/zyl/handle_v1_150/database_handle_rib.py #入库handle_server2处理的rib文件
+/home/zyl/hjj_mysql/timing.py #定时运行数据库聚合监测点，统计信息等脚本
+/home/zyl/socket/ip2as.py #网页中IP query标签调用的程序
+
+
+
+
+3.handle_server2 10.10.11.150
+3.1目录说明：
+/home/zyl/handle_v1_150  handle_server2的nfs 服务端
+
+3.2运行了的程序：
+/home/zyl/handle_v1_150/rib_start.py #处理handle_server2的rib文件

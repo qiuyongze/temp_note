@@ -1,0 +1,4 @@
+cp /etc/apt/sources.list /etc/apt/sources.list.bak
+vi /etc/apt/sources.list gg dG
+https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
+把网页上的源拷贝进去

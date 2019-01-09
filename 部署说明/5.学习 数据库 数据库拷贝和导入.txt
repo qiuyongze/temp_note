@@ -1,0 +1,9 @@
+sudo apt-get -y install mysql-server mysql-client
+/etc/init.d/mysql start
+
+被拷贝的机器
+mysqldump -uroot -p bgp_data > /home/zyl/handle_v1/database/bgp_data.sql
+
+拷贝到机器目录下
+mysql -uroot -p1q2w3e4r -se 'create database bgp_data;'
+mysql -uroot -p1q2w3e4r bgp_data < bgp_data.sql
