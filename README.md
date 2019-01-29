@@ -7,6 +7,7 @@
 ## 4.系统维护
 * 关闭打开系统查看[**关闭及打开系统.md**](https://github.com/YuanliangZhang/temp_note/blob/master/%E5%85%B3%E9%97%AD%E5%8F%8A%E6%89%93%E5%BC%80%E7%B3%BB%E7%BB%9F.md)
 * 机器重启了的话查看[**断电机器重启.md**](https://github.com/YuanliangZhang/temp_note/blob/master/%E6%96%AD%E7%94%B5%E6%9C%BA%E5%99%A8%E9%87%8D%E5%90%AF.md)
+* 网页url：10.10.11.162:22345
 	
 ## 5.从头部署，看[**部署说明**](https://github.com/YuanliangZhang/temp_note/tree/master/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E)
 
