@@ -1,0 +1,6 @@
+有网的机器上
+pip download -d /root/python_pack pymysql multiprocessing pytz threadpool datetime redis IPy networkx py-radix
+
+没网的机器上把/root/python_pack拷贝进去
+pip install --no-index --find-links=file:/root/python_pack pymysql multiprocessing pytz threadpool datetime redis IPy networkx py-radix
+

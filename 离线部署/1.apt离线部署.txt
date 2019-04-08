@@ -1,0 +1,33 @@
+ubuntu 服务器版 16.04
+有网的机器上
+1.
+apt-get -d install apache2 libapache2-mod-php7.2  php7.2-gd php7.2-mysql php7.2-zip php7.2-mbstring php7.2-json php7.2-xml redis-server mysql-server mysql-client composer zlib1g-dev libbz2-dev libcurl4-openssl-dev libmysqld-dev nfs-kernel-server portmap nfs-common libcurl4 python-pip
+
+2.
+根目录下
+cd /
+mkdir offlinePackage
+cp -r /var/cache/apt/archives /offlinePackage
+chmod 777 -R /offlinePackage/
+dpkg-scanpackages /offlinePackage/ /dev/null |gzip >/offlinePackage/Packages.gz
+cp /offlinePackage/Packages.gz /offlinePackage/archives/Packages.gz
+tar cvzf offlinePackage.tar.gz offlinePackage/
+
+需要离线安装的没网的机器上
+1.解压之前的包到根目录
+tar -xvf offlinePackage.tar.gz
+
+2.跟换源
+cp /etc/apt/sources.list /etc/apt/sources.list.back
+vi /etc/apt/sources.list
+全删了gg dG
+只添加一条deb file:// /offlinePackage/
+
+
+3.更新源
+apt-get update
+
+4.离线安装
+apt-get install apache2 libapache2-mod-php7.2  php7.2-gd php7.2-mysql php7.2-zip php7.2-mbstring php7.2-json php7.2-xml redis-server mysql-server mysql-client composer zlib1g-dev libbz2-dev libcurl4-openssl-dev libmysqld-dev nfs-kernel-server portmap nfs-common libcurl4 python-pip
+
+
