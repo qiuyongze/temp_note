@@ -11,4 +11,6 @@
 	
 ## 5.从头部署，看[**部署说明**](https://github.com/YuanliangZhang/temp_note/tree/master/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E)
 
+## 6.离线部署，看[**离线部署**](https://github.com/YuanliangZhang/temp_note/tree/master/%E7%A6%BB%E7%BA%BF%E9%83%A8%E7%BD%B2)
+
 * 有问题随时问我
