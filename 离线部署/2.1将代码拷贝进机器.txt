@@ -1,5 +1,15 @@
 要拷贝到web服务器虚拟机的目录
-10.10.11.162 /home/bgp        
+10.10.11.162 /home/bgp   
+修改权限 
+cd /home/bgp/www/gentelella
+chmod -R 777 storage bootstrap/cache
+cd /home/bgp/www/gentelella/app/Http/Controllers
+chmod +x *.py
+
+修改/home/bgp/www/gentelella/app/Http/Controllers/client.py
+修改/home/bgp/socket/ip2as.py
+里面的10.10.11.151都改成127.0.0.1
+
 10.10.11.162 /etc/apche2
 
 10.10.11.151 /home/zyl/socket 拷贝到web服务器的/home/bgp
