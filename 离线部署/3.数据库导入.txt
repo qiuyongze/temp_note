@@ -1,6 +1,6 @@
 
 被拷贝的机器
-mysqldump -uroot -p bgp_data > /要导入的目录/tp_bgp_data.sql
+mysqldump -uroot -p tp_bgp_data > /要导入的目录/tp_bgp_data.sql
 
 拷贝到机器目录下
 mysql -uroot -p1q2w3e4r -se 'create database tp_bgp_data;'
