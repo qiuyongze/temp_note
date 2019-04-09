@@ -10,7 +10,7 @@ chmod +x *.py
 修改/home/bgp/socket/ip2as.py
 里面的10.10.11.151都改成127.0.0.1
 
-10.10.11.162 /etc/apche2
+10.10.11.162 /etc/apache2
 
 10.10.11.151 /home/zyl/socket 拷贝到web服务器的/home/bgp
 
