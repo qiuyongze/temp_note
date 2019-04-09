@@ -1,0 +1,8 @@
+要拷贝到web服务器虚拟机的目录
+10.10.11.162 /home/bgp        
+10.10.11.162 /etc/apche2
+
+10.10.11.151 /home/zyl/socket 拷贝到web服务器的/home/bgp
+
+在数据库服务器创建目录/home/topo/bgp_data home/topo/topo_data
+拷贝10.10.11.151的 /home/zyl/handle_v1/database/tp_bgp_data.sql 拷贝到数据库服务器的/home/topo/bgp_data

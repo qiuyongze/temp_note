@@ -1,7 +1,9 @@
 
-被拷贝的机器
+被拷贝的机器(只是执行原理，不是原命令)
 mysqldump -uroot -p tp_bgp_data > /要导入的目录/tp_bgp_data.sql
 
-拷贝到机器目录下
+数据库机器目录下
 mysql -uroot -p1q2w3e4r -se 'create database tp_bgp_data;'
 mysql -uroot -p1q2w3e4r tp_bgp_data < tp_bgp_data.sql
+
+修改web服务器的数据库配置/home/bgp/www/gentelella/.env 改成指向实际数据库服务器
