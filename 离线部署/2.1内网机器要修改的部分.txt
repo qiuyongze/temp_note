@@ -1,0 +1,6 @@
+web服务器修改一下目录名字（把zyl改为bgp）
+（修改文件的时候可以用xftp的，然后在文本编辑器里面ctrl+f /home/zyl 替换为 /home/bgp）
+1. /home/zyl改为/home/bgp
+2. /etc/apache2/sites-available/000-default.conf 文件里的/home/zyl改为/home/bgp
+3. /home/bgp/www/gentelella/app/Http/Controllers/shortest_path_www.py 里的/home/zyl改为/home/bgp
+
