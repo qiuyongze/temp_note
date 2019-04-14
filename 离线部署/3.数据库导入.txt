@@ -7,3 +7,4 @@ mysql -uroot -p1q2w3e4r -se 'create database tp_bgp_data;'
 mysql -uroot -p1q2w3e4r tp_bgp_data < tp_bgp_data.sql
 
 修改web服务器的数据库配置/home/bgp/www/gentelella/.env 改成指向实际数据库服务器
+虚拟机配置时要打开数据库的远程连接
